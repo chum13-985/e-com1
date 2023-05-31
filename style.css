@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Welcome-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: 55%;
+}
+.Welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 550px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.25px);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.5px);
+    border-radius: 20px;
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.1);
+}
+.Welcome h2{
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #0d2ec2;
+}
+.Welcome h3{
+    width: 100%;
+    margin-bottom: 20px;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #af0ea7;
+}
+.Welcome .inputbox input{
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #f7b859;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 25px;
+}
+.Welcome .inputbox input::placeholder{
+    color: #f7b859;
+    font-size: 17px;
+}
+#btn{
+    position: relative;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #c559f7;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+#btn:hover{
+    background-color: #cd67f5;
+}
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/bg-imgy.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:  600px) {
+    #btn{
+        display: block;
+    }
+    .bg-img{
+        display: block;
+    }  
+    .Welcome .inputbox input{
+        display: block;
+    }    
+    .Welcome{
+        display:block;
+    }
+
+}
